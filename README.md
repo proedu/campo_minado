@@ -1,2 +1,3 @@
 # java-tutorial
-Tutorial do uso de Git e de introdução a sintaxe do Java
+
+Introdução as ferramentas de software do projeto ProEdu.
