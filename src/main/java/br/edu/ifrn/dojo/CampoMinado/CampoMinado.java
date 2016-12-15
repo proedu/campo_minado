@@ -1,10 +1,6 @@
 package br.edu.ifrn.dojo.CampoMinado;
 
-import java.util.Random;
-
 public class CampoMinado {
-
-   private Random r1;	
 
     private void atribui(int linha, int coluna, int valor) {
 
@@ -13,25 +9,26 @@ public class CampoMinado {
     private int pegue(int linha, int coluna) {
         return -1;
     }
+
+    private void preencherNum(int M[][]){
+        int varI, varJ, valor;
+
+        CampoMinado m = new CampoMinado();
+
+        for (int i=0; i<=m; i++){
+          for (int j=0; j<=n; i++){
+            if (M[i][j] != -1){
+              varI = i;
+              varJ = j;
+              for (int k=varI-1; k<=varI+1; k++){
+                for (int z=varJ-1; z<=varJ+1; z++){
+                  if (M[var-1][j]==-1)
+                    valor++;
+                }
+              }
+            }
+            m.atribui(i,j,valor);
+          }
+        }
+    }
 }
-
-    private void posicionarMinas( ){
-
-	r1 = new Random();
-	qtd =0;
-	int linha, coluna, qtd=0;
-
-	while((qtd<valor)){
-		linha = r1.nextInt(campo[][].length);
-		coluna = r1.nextInt(campo[].length);
-
-		if(campo[linha][coluna]!=null){
-			continue;
-		}else{
-			campo[linha][coluna] = -1;
-			qtd++;
-		}
-	}
-     }
-
-   }
