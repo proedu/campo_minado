@@ -17,11 +17,11 @@ public class CampoMinado {
 
 
   private void atribui(int linha, int coluna, int valor) {
-
+    this.valores[linha][coluna] = valor;
   }
 
   private int pegue(int linha, int coluna) {
-    return -1;
+    return this.valores[linha][coluna];
   }
 
 
