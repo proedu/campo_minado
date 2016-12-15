@@ -6,9 +6,8 @@ public class CampoMinado {
 
 
   private Random r1;
-
-  private int[][] valores;
-  private int[][] estados;
+  private int[][] campo;
+  private Boolean valor = true;
 
 
   public CampoMinado(int linhaEColuna, int qtdBombas) {
@@ -24,23 +23,41 @@ public class CampoMinado {
   private int pegue(int linha, int coluna) {
     return -1;
   }
-}
 
-private void posicionarMinas( ){
 
-  r1 = new Random();
-  qtd =0;
-  int linha, coluna, qtd=0;
+  private void posicionarMinas( ){
 
-  while((qtd<valor)){
-    linha = r1.nextInt(campo[][].length);
-    coluna = r1.nextInt(campo[].length);
+    r1 = new Random();
+    qtd =0;
+    int linha, coluna, qtd=0;
 
-    if(campo[linha][coluna]!=null){
-      continue;
-    }else{
-      campo[linha][coluna] = -1;
-      qtd++;
+    while((qtd<valor)){
+      linha = r1.nextInt(campo[][].length);
+      coluna = r1.nextInt(campo[].length);
+
+      if(campo[linha][coluna]!=null){
+        continue;
+      }else{
+        campo[linha][coluna] = -1;
+        qtd++;
+      }
     }
   }
+  
+  private int minasAtivas(int[][] campoM){
+    int qtdeMinas = 0;
+
+    for(int i = 0; i< campoM.length; i++){
+      for(int j = 0; j < campoM.length; j++){
+        if(campoM[i][j] == -1 && valor==false){
+          qtdeMinas++;
+        }
+        j++;
+      }
+      i++;
+    }
+    return qtdeMinas;
+  }
+
+
 }
