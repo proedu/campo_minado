@@ -13,6 +13,9 @@ public class CampoMinado {
     private int pegue(int linha, int coluna) {
         return -1;
     }
+
+public boolean jogoFinalizado() {
+   return true;
 }
 
     private void posicionarMinas( ){
@@ -35,3 +38,4 @@ public class CampoMinado {
      }
 
    }
+}
