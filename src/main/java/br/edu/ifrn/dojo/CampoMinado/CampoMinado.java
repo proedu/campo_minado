@@ -2,13 +2,9 @@ package br.edu.ifrn.dojo.CampoMinado;
 
 public class CampoMinado {
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
   private Random r1;
   private int[][] campo;
   private Boolean valor = true;
-=======
   private Random r1;
   private int[][] valores;
   private int[][] estados;
@@ -41,7 +37,6 @@ public class CampoMinado {
           }
         }
     }
->>>>>>> 68c9853cda1b75374a74e8fd826847a5d9926f17
 
 
   public CampoMinado(int linhaEColuna, int qtdBombas) {
@@ -52,7 +47,6 @@ public class CampoMinado {
 
   private void atribui(int linha, int coluna, int valor) {
     this.valores[linha][coluna] = valor;
-<<<<<<< HEAD
   }
 
   private int pegue(int linha, int coluna) {
@@ -65,8 +59,6 @@ public class CampoMinado {
     r1 = new Random();
     qtd =0;
     int linha, coluna, qtd=0;
-<<<<<<< HEAD
-
     while((qtd<valor)){
       linha = r1.nextInt(campo[][].length);
       coluna = r1.nextInt(campo[].length);
@@ -96,18 +88,14 @@ public class CampoMinado {
   }
 
 
-=======
   private void atribui(int linha, int coluna, int valor) {
 
-=======
->>>>>>> 68c9853cda1b75374a74e8fd826847a5d9926f17
   }
 
   private int pegue(int linha, int coluna) {
     return this.valores[linha][coluna];
   }
 
-<<<<<<< HEAD
   public String imprimeCampoRevelado (int[][] matriz, int quantidadeDeLinhas, int quantidadeDeColunas) {
     String stringToPrint = "";
     int larguraImpressaoColunas = (quantidadeDeColunas*4)+1;//Integer.parseInt(String.valueOf(quantidadeDeColunas * 1.68).charAt(0)+"");
@@ -159,9 +147,6 @@ public class CampoMinado {
     stringToPrint += "\n";
     return stringToPrint;
   }
-<<<<<<< HEAD
->>>>>>> issue06
-=======
 
   private int minasAtivas(int[][] campoM){
     int qtdeMinas = 0;
@@ -177,10 +162,6 @@ public class CampoMinado {
     }
     return qtdeMinas;
   }
-
-
->>>>>>> 58bfd4354b42b4d86dbead9e7e5c37412d6b6e45
-=======
 
   private void posicionarMinas( ){
 
@@ -216,7 +197,5 @@ public class CampoMinado {
     }
     return qtdeMinas;
   }
-
-
->>>>>>> 68c9853cda1b75374a74e8fd826847a5d9926f17
+  
 }
