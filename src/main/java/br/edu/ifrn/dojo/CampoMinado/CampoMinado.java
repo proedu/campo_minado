@@ -10,6 +10,7 @@ public class CampoMinado {
   private Boolean valor = true;
 
 
+
   public CampoMinado(int linhaEColuna, int qtdBombas) {
     this.valores = new int[linhaEColuna][linhaEColuna]();
     this.estados = new int[linhaEColuna][linhaEColuna]();
@@ -24,6 +25,14 @@ public class CampoMinado {
     return this.valores[linha][coluna];
   }
 
+    private int pegue(int linha, int coluna) {
+        return -1;
+    }
+
+public boolean jogoFinalizado() {
+   return true;
+}
+
 
   private void posicionarMinas( ){
 
@@ -34,6 +43,7 @@ public class CampoMinado {
     while((qtd<valor)){
       linha = r1.nextInt(campo[][].length);
       coluna = r1.nextInt(campo[].length);
+
 
       if(campo[linha][coluna]!=null){
         continue;
@@ -60,4 +70,7 @@ public class CampoMinado {
   }
 
 
+}
+
+   }
 }
