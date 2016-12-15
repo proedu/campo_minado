@@ -4,7 +4,18 @@ import java.util.Random;
 
 public class CampoMinado {
 
+<<<<<<< HEAD
    private Random r1;	
+=======
+    private int[][] valores;
+    private int[][] estados;
+
+
+    public CampoMinado(int linhaEColuna, int qtdBombas) {
+      this.valores = new int[linhaEColuna][linhaEColuna]();
+      this.estados = new int[linhaEColuna][linhaEColuna]();
+    }
+>>>>>>> tarefa-1
 
     private void atribui(int linha, int coluna, int valor) {
 
