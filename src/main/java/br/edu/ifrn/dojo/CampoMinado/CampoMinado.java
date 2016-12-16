@@ -1,5 +1,8 @@
 package br.edu.ifrn.dojo.CampoMinado;
 
+/**
+* @author Leonardo Minira
+*/
 public class CampoMinado {
     private int[][] valores;
     private int[][] estados;
