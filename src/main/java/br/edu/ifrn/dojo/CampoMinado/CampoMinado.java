@@ -14,4 +14,9 @@ public class CampoMinado {
         return campo;
     }
 
+    static void posicionarMinas() {
+        for (int i = 0; i < quantidadeDeBombas; i++) {
+            //posiciona aleatoriamente
+        }
+    }
 }
