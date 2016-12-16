@@ -1,8 +1,8 @@
 package br.edu.ifrn.dojo.CampoMinado;
 
 public class CampoMinado {
-    private int[][] valore;
-    private int[][] estado;
+    private int[][] valores;
+    private int[][] estados;
     private int quantidadeBombas;
 
     static CampoMinado criar(int tamanho, int qtqBombas) {
