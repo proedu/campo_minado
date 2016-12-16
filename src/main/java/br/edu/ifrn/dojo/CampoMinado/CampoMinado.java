@@ -14,6 +14,7 @@ public class CampoMinado {
         campo.estado = new int[tamanho][tamanho];
         campo.quantidadeBombas = qtqBombas;
         campo.score = int();
+	system.out.print("teste1");
         return campo;
     }
 
