@@ -22,5 +22,21 @@ dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
 
+# Arquivos ignorados em projeto Eclipse
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+.project
+*.launch
+.classpath
+
 # Arquivos ignorados em projeto NetBeans
 /nbproject/
