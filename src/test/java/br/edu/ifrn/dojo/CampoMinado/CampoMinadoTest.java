@@ -17,34 +17,19 @@ import static org.junit.Assert.*;
  * @author pekos
  */
 public class CampoMinadoTest {
-    
-    public CampoMinadoTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
 
     // TODO add test  here.
     // The methods must be annotated with annotation @Test. For example:
     //
     @Test
-    public void hello() {
+    public void testeConstrutor() {
         CampoMinado campo = new CampoMinado();
         assertNotNull(campo);
     }
-    
-    
+
+    @Test
+    public void testeCriarCampoPassandoParametros() {
+        CampoMinado campo = CampoMinado.criar(4, 6);
+        assertNotNull(campo);
+    }
 }
