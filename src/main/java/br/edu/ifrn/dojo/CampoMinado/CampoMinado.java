@@ -10,13 +10,8 @@ public class CampoMinado {
         campo.valore = new int[tamanho][tamanho];
         campo.estado = new int[tamanho][tamanho];
         campo.quantidadeBombas = qtqBombas;
-
+        campo.score = int();
         return campo;
     }
 
-    static void posicionarMinas() {
-        for (int i = 0; i < quantidadeDeBombas; i++) {
-            //posiciona aleatoriamente
-        }
-    }
 }
